@@ -1,5 +1,6 @@
 if(!require(archive)){install.packages("archive")};library(archive)
 
+# Função de download de microdados
 getENEMData <- function(year){
   options(timeout = max(10000, getOption("timeout")))
   
@@ -16,5 +17,5 @@ getENEMData <- function(year){
   
 }
 
+# Baixando microdados (Esses dados não estarão no github)
 getENEMData("2020")
-
