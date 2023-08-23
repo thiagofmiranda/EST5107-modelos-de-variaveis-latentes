@@ -38,7 +38,8 @@ itens |>
 
 # O item 39443 será removido da análise
 data_tct <- data |> 
-  dplyr::select(-NU_INSCRICAO,-`039443`)
+  dplyr::select(-NU_INSCRICAO,-`039443`) |> 
+  as.data.frame()
 
 
 # Análise TCT

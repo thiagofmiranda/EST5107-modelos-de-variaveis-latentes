@@ -18,4 +18,4 @@ getENEMData <- function(year){
 }
 
 # Baixando microdados (Esses dados não estarão no github)
-getENEMData("2020")
+getENEMData("2019")

@@ -25,6 +25,7 @@ data <- fread(file,
               na.strings = "", 
               showProgress = TRUE,encoding = "Latin-1")
 
+
 # Filtrando e dicotomizando repostas
 data_exam <- data |> 
   lazy_dt() |> 
@@ -43,7 +44,7 @@ itens <- itens |>
   mutate(CO_POSICAO=CO_POSICAO-135) |> 
   arrange(CO_ITEM)|> 
   as.data.frame()
-
+data_exam
 # Tratando respostas e ajustando ordenação de itens
 responses <- data.frame(
   NU_INSCRICAO=data_exam$NU_INSCRICAO,
